@@ -9,8 +9,7 @@ on-pull-requests:
 except-pull-requests:
   script:
     - echo 'this should not run on pull requests'
-    - sleep 20
     # make the job fail with a command that does not exist
-    - s
+    - boom
   except:
     - external_pull_requests
